@@ -1,131 +1,190 @@
-body {  
-    margin: 0 0;  
-    font-family: Arial, Helvetica, sans-serif;  
-font-size: 100%;  
-    width: 500px;  
-    margin: 0 auto;  
-    padding: 1em;  
-border: 2px solid blue;  
+.container
+{
+	width:100%;
 }
-
-select {
-    display: block;
-    float: left;
-    margin-right: 10px;
+.wrapper
+{
+	padding:10px 50px 5px 50px;
+	width=900px;
+	text-align:justify;
 }
-
-a.hover {
-    text-decoration: none;
+.dark
+{
+	background-color:#31353d;
+	color:white;
 }
-
-/* Main Layout */
-
-.simpleStore {
-    margin-top: 20px;
+.light
+{
+	background-color:#e9edf2;
 }
-
-.brand {
-    display: block;
-    float: left;
-    text-decoration: none;
-    color: #000;
+body
+{
+	background-image: url(../image/Full_screen.jpg);
+	font-family: 'Lobster', cursive;
 }
-
-.brand:hover {
-    color: #777;
+#clear
+{
+	clear:both;
 }
+#top_left
+{
+	display:inline-block;
 
-.brand img {
-	max-height: 50px;
 }
-
-/* simpleCart */
-
-.simpleCart_shelfItem {
-    border: 1px solid #EFEFEF;
-    padding: 25px 18px 10px 18px;
-    margin: 15px 0;
+#top_right
+{
+	float:right;
 }
-
-.simpleCart_items {
-    display: table;
-    border-collapse: collapse;
-    width: 100%;
-    min-height: 20px;
-    margin-bottom: 50px;
+#top_div
+{
+	height:40px;
+	line-height:35px;
 }
-
-.simpleCart_items div:first-child {
-    width: 100%
+#logo_left
+{
+	display:inline-block;
 }
-
-.simpleCart_decrement, .simpleCart_increment {
-    font-size: 18px;
-    line-height: 5px;
-    text-decoration: none;
+#logo_right
+{
+	float:right;
+	margin-top:25px;
 }
-
-.simpleCart_shelfItem label {
-    display: block;
-    float: left;
-    line-height: 40px;
-    margin-right: 10px;
+#textstyle
+{
+	height:30px;
+	border-radius:8px;
+	width:200px;
 }
-
-.item_thumb, .detail_thumb {
-    height: 150px;
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 10px;
+#button
+{
+	background-color:green;
+	color:white;
+	padding:7px;
+	border-radius:8px;
+	border:1px solid green;
+	width:70px;
 }
-
-.item_Quantity {
-    display: inline-block;
-    width: 50px;
+#menu ul
+{
+	list-style:none;
 }
-
-.item_price {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 22px;
+#menu ul li
+{
+	background-image:url(../image/single.jpg);
+	margin:2px;
+	margin-left:11px;
+	width:210px;
+	height:35px;
+	text-align:center;
+	line-height:35px;
+	float:left;
+	position:relative;
+	z-index:1000;
+	border-radius:100px;
 }
-
-.item_description {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
+#menu ul li a
+{
+	text-decoration:none;
+	color:white;
+	display:block;
 }
-
-.headerRow {
-    display: table-row;
-    font-weight: 700;
-    border-bottom: 1px solid #E1E1E1;
+#menu ul li a:hover
+{
+	background-color:green;
+	border-radius:8px;
 }
-
-.headerRow div {
-    display: table-cell;
-    padding: 10px;
+#menu ul ul
+{
+	position:absolute;
+	display:none;
 }
-
-.itemRow.odd {
-    background: #FAFAFA;
+#menu ul li:hover > ul
+{
+	display:block;
 }
-
-.itemRow {
-    display: table-row;
-    border-bottom: 1px solid #E1E1E1;
+#menu ul ul ul
+{
+	margin-left:205px;
+	top:0px;
 }
-
-.itemRow:last-child {
-    border-bottom: 0 solid #fff;
+#menu ul ul ul li
+{
+	background-color:blue;
+	width:220px;
 }
-
-.itemRow div {
-    display: table-cell;
-    padding: 10px;
+#menu
+{
+	background-color:green;
 }
-
-.itemRow .item-quantity {
-    text-align: center;
+.container1
+{
+	margin-top:5px;
 }
+#outerbox
+{
+	width:900px;
+	overflow:hidden;
+	margin-left:200px;
+	height:300px;
 
+}
+#sliderbox
+{
+	position:relative;
+	width:2700px;
+	animation-name:slider;
+	animation-duration:15s;
+	animation-iteration-count:infinite;
+}
+#sliderbox1
+{
+	position:relative;
+	width:3000px;
+	animation-name:slider;
+	animation-duration:15s;
+	animation-iteration-count:infinite;
+}
+#sliderbox img
+{
+	float:left;
+}
+@keyframes slider
+{
+	0%
+	{
+		left:0px;
+	}
+	26.7%
+	{
+		left:0px;
+	}
+	33.4%
+	{
+		left:-900px;
+	}
+	60%
+	{
+		left:-900px;
+	}
+	67%
+	{
+		left:-1800px;
+	}
+	93.4%
+	{
+		left:-1800px;
+	}
+	100%
+	{
+		left:-2700px;
+	}
+}
+.footer
+{
+	align:bottom;
+	margin-top:10px;
+	padding-top:10px;
+	background-color:green;
+	background-color:#31353d;
+	color:white;
 }
